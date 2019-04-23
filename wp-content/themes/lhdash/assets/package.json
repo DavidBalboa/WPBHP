@@ -1,0 +1,47 @@
+{
+  "title": "Los Heroes Dashboard",
+  "name": "los-heroes-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard de Los Heroes hecho en Bootstrap 4.",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template",
+    "admin",
+    "app"
+  ],
+  "author": "Gabriel Romero",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabocles/URL.git"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.7.0",
+    "bootstrap": "4.2.1",
+    "chart.js": "2.7.3",
+    "datatables.net-bs4": "1.10.19",
+    "jquery": "3.3.1",
+    "jquery.easing": "^1.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-clean-css": "4.0.0",
+    "gulp-header": "2.0.7",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-uglify": "3.0.1"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
