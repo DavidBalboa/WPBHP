@@ -1,0 +1,117 @@
+
+/********************************
+			  HEADER
+*********************************/
+
+a.navbar-brand {
+    margin-right: 0px;
+}
+
+body{
+    background: url('../img/front/fondo.png');
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+i.fas.fa-fw.fa-search {
+    vertical-align: -webkit-baseline-middle;
+    font-size: 20px;
+}
+
+img.navbar-logo {
+    width: 50%;
+}
+
+nav.navbar.navbar-default.front {
+    width: 1032px;
+    margin: 18px auto;
+}
+
+.btn-in {
+    background-color: #E65400;
+    color: #fff;
+}
+
+.btn-login-submit,.btn-recupera-clave-submit {
+    background: #E65400;
+    color: #fff !important;
+    width: 100%;
+}
+
+.col-md-12.col-xs-12.btn-submit,.col-md-12.col-xs-12.btn-submit-recupera-clave {
+    padding: 0px;
+}
+
+.container.front {
+    margin-top: 26px;
+}
+
+.form-box {
+	background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 0px 13px 1px rgba(202,202,202,1);
+    width: 86%;
+    margin: 0px auto;
+}
+
+.form-group p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-login,.form-recupera-clave {
+	padding-bottom: 40px;
+    margin: 0px auto;
+    width: 48%;
+}
+
+.form-text{
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.form-text-rc {
+	cursor: pointer;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+.form-title h3 {
+    text-align: center;
+    padding: 36px 0px 8px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu{
+	width: 86%; 
+}
+
+.menu ul {
+    float: left;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    color: #fff;
+}
+
+.search {
+	display: none;
+    width: 20%;
+}
+
+.search-icon {
+    position: absolute;
+}
+
+.search-btn {
+    width: 74%;
+    float: right;
+}
+
+#form-principal{
+    margin: 0px auto;
+}

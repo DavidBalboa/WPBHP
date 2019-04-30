@@ -48,7 +48,7 @@
         <div class="modal-body">Selecciona "Salir" debajo si estás listo para terminar tu actual sesión.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="login.html">Salir</a>
+          <a class="btn btn-primary" href="login">Salir</a>
         </div>
       </div>
     </div>
@@ -72,9 +72,7 @@
     </div>
   </div>
 
-
 <!-- Bootstrap core JavaScript-->
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/jquery/jquery.min.js"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
@@ -86,12 +84,14 @@
 <!-- Page level plugins -->
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/chart.js/Chart.min.js"></script>
+<!--script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/chart.js/Chart.min.js"></script-->
 
 <!-- Page level custom scripts -->
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/datatables-demo.js"></script>
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-area-demo.js"></script>
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-pie-demo.js"></script>
+<!--script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-area-demo.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-pie-demo.js"></script-->
+
+
 
 <?php wp_footer(); ?>
 

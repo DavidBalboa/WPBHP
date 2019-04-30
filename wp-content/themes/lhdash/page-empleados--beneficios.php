@@ -177,7 +177,7 @@ get_header();
                 <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/auto.png" alt="" class="img-responsive mw-100" />
                 </div>
             </div>
-            <h4 class="h6 font-weight-bold">Auto</h4>
+            <h4 class="h6 font-weight-bold cat-title">Auto</h4>
         </div>
 
         <div class="col-xl-2 col-md-2 mb-4">
@@ -186,7 +186,7 @@ get_header();
                 <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/salud.png" alt="" class="img-responsive mw-100" />
                 </div>
             </div>
-            <h4 class="h6 font-weight-bold">Salud</h4>
+            <h4 class="h6 font-weight-bold cat-title">Salud</h4>
         </div>
 
         <div class="col-xl-2 col-md-2 mb-4">
@@ -195,7 +195,7 @@ get_header();
                 <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/entretencion.png" alt="" class="img-responsive mw-100" />
                 </div>
             </div>
-            <h4 class="h6 font-weight-bold">Entretención</h4>
+            <h4 class="h6 font-weight-bold cat-title">Entretención</h4>
         </div>
 
         <div class="col-xl-2 col-md-2 mb-4">
@@ -204,7 +204,7 @@ get_header();
                 <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/belleza.png" alt="" class="img-responsive mw-100" />
                 </div>
             </div>
-            <h4 class="h6 font-weight-bold">Belleza</h4>
+            <h4 class="h6 font-weight-bold cat-title">Belleza</h4>
         </div>
 
     </div>

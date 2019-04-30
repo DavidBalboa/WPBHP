@@ -19,13 +19,22 @@
 
   <!-- Custom fonts for this template-->
   <link href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <!--link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/reset.css">
+
 
   <!-- Custom styles for this template-->
   <link href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/sb-admin-2.min.css" rel="stylesheet">
 
   <!-- Custom styles for this page -->
   <link href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <!-- CSS NEXO-IT -->
+  <link href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/style-backend.css" rel="stylesheet">
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/functions.js"></script>
+
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/jquery/jquery.min.js"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -40,31 +49,31 @@
     <?php // Page Wrapper ?>
     <div id="wrapper">
 
-      <?php if ( is_front_page() || is_page('empleados') || is_page('empleados-beneficios') || is_page('empleados-detalle') || is_page('empleados-solicitar') ) : ?>
+      <?php if ( is_front_page() || is_page('empleados') || is_page('empleados-beneficios') || is_page('empleados-detalle') || is_page('empleados-solicitar') || is_page('solicitudes') || is_page('reclamos') || is_page('nuevo-reclamo') ) : ?>
       <ul class="navbar-nav sidebar sidebar-light bg-white" id="accordionSidebar">
 
         <?php // Sidebar - Brand ?>
         <a class="sidebar-brand d-flex mb-4" href="#">
-          <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/bhp_logo.png" alt="" class="img-responsive" />
+          <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/logo/bhp_logo.svg">
         </a>
 
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-chart-bar"></i>
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/reports.svg">
             <span>Empleados</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="/wordpress2/?page_id=37">
-            <i class="fas fa-fw fa-gift"></i>
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/beneficios.svg">         
             <span>Beneficios</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-wifi"></i>
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/difusion.svg">
             <span>Difusión</span>
           </a>
         </li>
@@ -78,21 +87,28 @@
 
         <li class="nav-item active">
           <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-file-alt"></i>
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/solicitudes.svg">
             <span>Solicitudes</span>
           </a>
         </li>
 
         <li class="nav-item">
+          <a class="nav-link" href="/wordpress2/reclamos">
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/alert.svg">
+            <span>Reclamos</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-bell"></i>
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/notifications.svg">
             <span>Notificaciones</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-calendar"></i>
+            <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/calendar.svg">
             <span>Calendario</span>
           </a>
         </li>
@@ -177,7 +193,7 @@
       <?php // Main Content ?>
         <div id="content">
 
-          <?php if ( is_front_page() || is_page('empleados') || is_page('soporte') || is_page('proveedores') || is_page('empleados-beneficios') || is_page('empleados-detalle') || is_page('empleados-solicitar') ) : ?>
+          <?php if ( is_front_page() || is_page('empleados') || is_page('soporte') || is_page('proveedores') || is_page('empleados-beneficios') || is_page('empleados-detalle') || is_page('empleados-solicitar') || is_page('solicitudes') || is_page('reclamos') || is_page('nuevo-reclamo')  ) : ?>
 
           <?php // Topbar ?>
           <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top border-bottom">
@@ -263,15 +279,14 @@
             <?php // Nav Item - User Information ?>
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded mr-1" src="https://source.unsplash.com/QAB-WJcbgJk/100x100">
+                <img class="img-profile rounded mr-1" src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/perfil.png">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                   Victoria Soto de la Vega
                   <small class="d-lg-block">Empleado afiliado y mas texto</small>
                 </span>
               </a>
-
               <?php // Dropdown - User Information ?>
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+              <div class="dropdown-menu dropdown-menu-right">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Perfil
@@ -294,7 +309,7 @@
 
             </ul>
 
-          </nav>
+          </nav> <?php //wp_nav_menu( array( 'theme_location' => 'back-menu' ) ); ?>
           <?php // End of Topbar ?>
 
           <?php endif; ?>

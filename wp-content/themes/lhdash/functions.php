@@ -44,7 +44,9 @@ if ( ! function_exists( 'lh_dashboard_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'lh-dashboard' ),
+			//'menu-1' => esc_html__( 'Primary', 'lh-dashboard' ),			
+			'back-menu' => esc_html__( 'Primary', 'lh-dashboard' ),
+			'top'  => __( 'Top Menu', 'lh-dashboard' ),
 		) );
 
 		/*
