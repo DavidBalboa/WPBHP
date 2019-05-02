@@ -34,11 +34,17 @@
   <link href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/style-backend.css" rel="stylesheet">
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/functions.js"></script>
 
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/jquery/jquery.min.js"></script>
 
 	<?php wp_head(); ?>
 </head>
-
+<style type="text/css">
+  html {
+    margin-top: 0px !important;
+}
+div#wpadminbar {
+    display: none;
+}
+</style>
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
@@ -85,14 +91,14 @@
           </a>
         </li>
 
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="#">
             <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/solicitudes.svg">
             <span>Solicitudes</span>
           </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="/wordpress2/reclamos">
             <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/alert.svg">
             <span>Reclamos</span>
@@ -281,8 +287,13 @@
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="img-profile rounded mr-1" src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/perfil.png">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-                  Victoria Soto de la Vega
-                  <small class="d-lg-block">Empleado afiliado y mas texto</small>
+                  <?php
+
+$user=wp_get_current_user();
+          
+                  ?>
+                  <?=$user->display_name?>
+                  <small class="d-lg-block"><?=$user->wp_user_rol?></small>
                 </span>
               </a>
               <?php // Dropdown - User Information ?>
@@ -300,7 +311,8 @@
                   Actividad
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <!--a class="dropdown-item" href="logout" data-toggle="modal" data-target="#logoutModal"-->
+                <a class="dropdown-item uu" href="<?php echo wp_logout_url(); ?>">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Salir
                 </a>

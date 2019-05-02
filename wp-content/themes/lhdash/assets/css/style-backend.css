@@ -1,3 +1,4 @@
+
 /************ MENU/BACKEND *************/
 .nav-item:hover {
     background: #FAFAFA;
@@ -13,8 +14,8 @@
 }
 
 nav.navbar.navbar-expand.navbar-light.topbar.mb-4.static-top.border-bottom {
-	padding: 0px 80px 0px 80px !important;
-    margin-bottom: 0px !important;
+	/*padding: 0px 80px 0px 80px !important;*/
+    margin: 0px 80px 0px 80px !important;
 }
 
 .container-fluid{

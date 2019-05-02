@@ -88,7 +88,7 @@ get_header();
                             <th>ESTADO</th-->
                         </tr>
                     </thead>
-                    <tfoot>
+                    <!--tfoot>
                         <tr>
                             <th>Reclamo</th>
                             <th>Motivo</th>
@@ -98,11 +98,8 @@ get_header();
                             <th>Estado</th>
                             <th>Reclamo ID</th>
                             <th>Observación</th>
-                            <!--th>APE.MAT</th>
-                            <th>ROL ASOCIADO</th>
-                            <th>ESTADO</th-->
                         </tr>
-                    </tfoot>
+                    </tfoot-->
                     
                     </table>
                 </div>

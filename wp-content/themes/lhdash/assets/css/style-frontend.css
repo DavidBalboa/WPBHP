@@ -8,7 +8,7 @@ a.navbar-brand {
 }
 
 body{
-    background: url('../img/front/fondo.png');
+    /*background: url('../img/front/fondo.png');*/
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -60,11 +60,38 @@ nav.navbar.navbar-default.front {
     margin-bottom: 4px;
 }
 
-.form-login,.form-recupera-clave {
+/*.form-login,.form-recupera-clave {
 	padding-bottom: 40px;
     margin: 0px auto;
     width: 48%;
+}*/
+
+/*************** login wordpress */
+.form-login, .form-recupera-clave {
+    padding: 70px 0px 160px 0px;
+    margin: 0px auto;
+    width: 50%;
 }
+td.lwa-submit-links {
+    display: none;
+}
+.lwa.lwa-default {
+    padding: 5px 0px 20px 0px;
+}
+.lwa-submit-button {
+    width: 38%;
+    position: absolute;
+    padding: 20px 0px;
+}
+input#lwa_wp-submit {
+    width: 100%;
+    background: #E65400;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 8px;
+    border: none;
+}
+/**********************************/
 
 .form-text{
     font-size: 14px;
@@ -95,7 +122,7 @@ nav.navbar.navbar-default.front {
 }
 
 .menu ul li a {
-    color: #fff;
+    color: #000;
 }
 
 .search {

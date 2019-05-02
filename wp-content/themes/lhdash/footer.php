@@ -73,6 +73,7 @@
   </div>
 
 <!-- Bootstrap core JavaScript-->
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/jquery/jquery.min.js"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
@@ -84,12 +85,12 @@
 <!-- Page level plugins -->
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-<!--script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/chart.js/Chart.min.js"></script-->
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/chart.js/Chart.min.js"></script>
 
 <!-- Page level custom scripts -->
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/datatables-demo.js"></script>
-<!--script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-area-demo.js"></script>
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-pie-demo.js"></script-->
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-area-demo.js"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-pie-demo.js"></script>
 
 
 
