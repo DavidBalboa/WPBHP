@@ -210,7 +210,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 		unset( $error );
 	}
 
-	if ( $wp_error->has_errors() ) {
+	if ( $wp_error->get_error_code() ) {
 		$errors   = '';
 		$messages = '';
 		foreach ( $wp_error->get_error_codes() as $code ) {
@@ -352,7 +352,7 @@ function retrieve_password() {
 	 */
 	do_action( 'lostpassword_post', $errors );
 
-	if ( $errors->has_errors() ) {
+	if ( $errors->get_error_code() ) {
 		return $errors;
 	}
 
@@ -687,7 +687,7 @@ switch ( $action ) {
 		 */
 		do_action( 'validate_password_reset', $errors, $user );
 
-		if ( ( ! $errors->has_errors() ) && isset( $_POST['pass1'] ) && ! empty( $_POST['pass1'] ) ) {
+		if ( ( ! $errors->get_error_code() ) && isset( $_POST['pass1'] ) && ! empty( $_POST['pass1'] ) ) {
 			reset_password( $user, $_POST['pass1'] );
 			setcookie( $rp_cookie, ' ', time() - YEAR_IN_SECONDS, $rp_path, COOKIE_DOMAIN, is_ssl(), true );
 			login_header( __( 'Password Reset' ), '<p class="message reset-pass">' . __( 'Your password has been reset.' ) . ' <a href="' . esc_url( wp_login_url() ) . '">' . __( 'Log in' ) . '</a></p>' );
@@ -1007,7 +1007,7 @@ switch ( $action ) {
 		}
 
 		if ( $interim_login ) {
-			if ( ! $errors->has_errors() ) {
+			if ( ! $errors->get_error_code() ) {
 				$errors->add( 'expired', __( 'Your session has expired. Please log in to continue where you left off.' ), 'message' );
 			}
 		} else {
@@ -1049,7 +1049,7 @@ switch ( $action ) {
 		}
 		$rememberme = ! empty( $_POST['rememberme'] );
 
-		if ( $errors->has_errors() ) {
+		if ( $errors->get_error_code() ) {
 			$aria_describedby_error = ' aria-describedby="login_error"';
 		} else {
 			$aria_describedby_error = '';
