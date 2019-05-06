@@ -20,40 +20,23 @@ function enviaForm(){
         data: datos,// capturta los valores del formulario y los concatena
         async:true,     // Cuando se ejecuten demasiado ajax  se debera  agregar esta instruccion. 
         success: function(datos){ // datos -> es lo q recibimos del controlados 
-         //return false;
-       // $("#reclamoModal").show();
-
-        //$("#respuesta");
-
-        /*alert(datos);
-        var reclamoId = datos.reclamoId;
-        alert(reclamoId);*/
-    Swal.fire({
-      type: 'success',
-      title: 'Reclamo creado exitosamente',
-      //text: 'Something went wrong!',
-      //footer: '<a href>Why do I have this issue?</a>'
-  },
-            function(isConfirm){
-                if (isConfirm) {       
-                     window.location = "//localhost/wordpress2/login";
-                } 
-        }
-    );
-
-
-
-
-
-    }
-   
-    });  
+        var reclamo = JSON.parse(datos);
+        Swal.fire({
+          type: 'success',
+          title: 'Reclamo creado exitosamente',          
+          text: "Su ID de reclamo es "+reclamo.reclamoId,            
+            }).then((result) => {
+              window.location = "http://bhp-wordpress-pocwp-bhp.apps.openshift-desa.losheroes.cl/reclamos";
+            });
+       
+        } 
+    });
     limpiar();   
 }
 
 
 function limpiar(){
-     $('#reclamoTitulo').val("");
+    $('#reclamoTitulo').val("");
     $('#motivoReclamoId').val(0);
     $('#reclamoObservacion').val("");
 }

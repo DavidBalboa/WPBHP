@@ -38,12 +38,8 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 //Ejecutamos la petición
 $result = curl_exec($ch);
 
-//echo "envia ".$result; //die;
-//return $result["reclamoId"];
-//close cURL resource
-//$datos[]= array('reclamoId' => $result["reclamoId"]);
 curl_close($ch);
-$json_string = json_encode($result);
+$json_string = json_encode($result, JSON_FORCE_OBJECT);
 
 echo $json_string;
 
