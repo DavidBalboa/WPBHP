@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <script type="text/javascript">
-
+//$.noConflict();
     JSON.parse = JSON.parse || function(str){
         if(str === ""){
             str = '""';
@@ -21,7 +21,7 @@ get_header();
     };
 
     //(function($) {
-    $(document).ready(function(){
+    jQuery(function($) {
         function getReclamos(){
             $.ajax({
                 url: 'http://srv002-listarreclamos-losheroesbhp.apps.openshift-desa.losheroes.cl/srv002-listarreclamos?rut=14634025',
