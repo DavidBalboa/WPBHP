@@ -21,7 +21,11 @@ get_header();
     };
 
     //(function($) {
+<<<<<<< HEAD
     jQuery(function($) {
+=======
+     jQuery(function($) {
+>>>>>>> 2b359c7a888069d3956dae19c49906bedcb88121
         function getReclamos(){
             $.ajax({
                 url: 'http://srv002-listarreclamos-losheroesbhp.apps.openshift-desa.losheroes.cl/srv002-listarreclamos?rut=14634025',
