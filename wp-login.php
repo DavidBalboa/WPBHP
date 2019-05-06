@@ -55,7 +55,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 	 */
 	$shake_error_codes = apply_filters( 'shake_error_codes', $shake_error_codes );
 
-	if ( $shake_error_codes && $wp_error->has_errors() && in_array( $wp_error->get_error_code(), $shake_error_codes ) ) {
+	if ( $shake_error_codes && $wp_error->get_error_code() && in_array( $wp_error->get_error_code(), $shake_error_codes ) ) {
 		add_action( 'login_head', 'wp_shake_js', 12 );
 	}
 
