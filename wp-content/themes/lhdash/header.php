@@ -72,7 +72,7 @@ div#wpadminbar {
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/wordpress2/?page_id=37">
+          <a class="nav-link" href="#">
             <img src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/img/icon-menu/beneficios.svg">         
             <span>Beneficios</span>
           </a>
