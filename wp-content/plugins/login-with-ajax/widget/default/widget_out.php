@@ -29,7 +29,7 @@
                 <tr><td colspan="2"><?php do_action('login_form'); ?></td></tr>
                 <tr class="lwa-submit">
                     <td class="lwa-submit-button">
-                        <input type="submit" name="wp-submit" id="lwa_wp-submit" value="<?php esc_attr_e('Log In', 'login-with-ajax'); ?>" tabindex="100" />
+                        <input type="submit" name="wp-submit" id="lwa_wp-submit" value="<?php esc_attr_e('Ingresar', 'login-with-ajax'); ?>" tabindex="100" /> <!--onclick="validaLogin(this.value)"/-->
                         <input type="hidden" name="lwa_profile_link" value="<?php echo esc_attr($lwa_data['profile_link']); ?>" />
                         <input type="hidden" name="login-with-ajax" value="login" />
 						<?php if( !empty($lwa_data['redirect']) ): ?>

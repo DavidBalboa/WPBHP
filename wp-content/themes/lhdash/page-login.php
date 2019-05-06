@@ -6,7 +6,15 @@
 
 get_header("front");
 ?>
+<script type="text/javascript">
+/*function validaLogin()	{
 
+	var log = 
+	var pwd =
+
+	alert(id); return false;
+}*/
+</script>
 <div class="container">	
 	<div class="row">
 		<div class="col-md-12">

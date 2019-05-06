@@ -10,6 +10,7 @@
  */
 
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -32,9 +33,9 @@
 
   <!-- CSS NEXO-IT -->
   <link href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/style-backend.css" rel="stylesheet">
-<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/functions.js"></script>
 
 
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/css/sweetalert2.min.css">
 	<?php wp_head(); ?>
 </head>
 <style type="text/css">
@@ -289,11 +290,12 @@ div#wpadminbar {
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                   <?php
 
-$user=wp_get_current_user();
+$wp_users = wp_get_current_user();
           
+//$categoria=wp_get_categorias();<?=$categoria->categoriaId
                   ?>
-                  <?=$user->display_name?>
-                  <small class="d-lg-block"><?=$user->wp_user_rol?></small>
+                  <?=$wp_users->display_name?>
+                  <small class="d-lg-block"><?=$wp_users->wp_user_rol?></small>
                 </span>
               </a>
               <?php // Dropdown - User Information ?>

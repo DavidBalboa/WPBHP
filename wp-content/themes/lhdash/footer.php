@@ -76,6 +76,7 @@
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/jquery/jquery.min.js"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/functions.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -93,6 +94,7 @@
 <script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/demo/chart-pie-demo.js"></script>
 
 
+<script src="<?php bloginfo( 'stylesheet_directory' ) ?>/assets/js/sweetalert2.min.js"></script>
 
 <?php wp_footer(); ?>
 
